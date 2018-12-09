@@ -15,6 +15,7 @@ var adminRouter = require('./routes/admin.js')
 var itemRouter = require('./routes/item.js')
 var categoryRouter = require('./routes/category.js')
 var cartRouter = require('./routes/cart.js')
+const routes = require('./routes/index.js')
 
 var app = express();
 
@@ -29,7 +30,7 @@ app.use('/admin', adminRouter);
 app.use('/item', itemRouter)
 app.use('/category', categoryRouter)
 app.use('/cart',cartRouter)
-
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
