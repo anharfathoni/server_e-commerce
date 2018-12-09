@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "my-project-1-224103",
+  "private_key_id": "d1ebde223d31757d1f064ebf3cd1ab2472eddaf3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCxQuJ6uR6+4FuO\n0Q5vCC8EbNZxlBBIzRawo1MmZP4qIsPcsxij75j7B2nPkbZ2nOeq6veP6bhpX/pi\nFV5YePXX3M2Aib27i3eqzv0XH8SteowuvcjLsN8uo33snP0S1tzPJUcnqNdS+L/R\nXj2pkASVLIhMskz0BFaNhpHlTBTRT1kgL1dulctwVecrOoZpzck2kxKkGCEW7SrK\nGz87GTDel1yAMXF5InuRaKZeWdlkG7MNd04+AYckYd08aE4LYq7fdWM97x03y40w\nVXzXGwUsJP96oASRS/APC8X9vg7xG4+V36cJb9/fpaGdp0vUy6l7T7tNblaoajOw\nV1Z/0TUVAgMBAAECggEAANjmPrpsSnLFlULsC/1Qxjdj9gKEamiqi1kYgGY6rcZh\nQ8iKXVw7kbWZHKAgbGQ3GkLJwKMYGc7W4kmiXA9l82xvggYGhWM3BPa80HO7K64a\nhe2rzEdx5aXr5+nfLswenZHay3Z74v5j4lMOPeV9lB30n9M5WXA83qvOPjeVIOP7\nZh4Z64dpdQLgEBgP7Ly6Smga3r6i6qaa7Z0BSYkgBNIkS5ENKbGBWykzNDKEwZs7\nF8W0NCeVffH85472+WKIMpmuaN7gw7PVLhFjz6r4n9XNgAZ6dz6FA/y4ppfBJjLh\nksMtvFcvvIRZX89f6bgfEvWschikk3RAnRjDTZE0EQKBgQDyfvvkt7nqsS+Hxwui\nKLrH/gUW9Ru+lSo9cuukpc0FQvMUpEShjBNpaj9PRUlHdNwrALZcLEEKusagfp6j\nAs4pu8NXtWOyqTmtYXeAc+G/k4XASn3eGIR+3SZ+lHUbsgqqNedyxbDRgXnV654v\nKii/cz/ksTsExJHmSk8MUUNW0QKBgQC7Iep6k3JC4MswoStnLSGxOd2kXKTO9wRy\nKufEo0Mi3ek+FhMI7sKeYLsfnAy54Ixks6LugeMZTGgUC7yQzOqr2aFIlF0hwcWp\nIl9ppWTBXJ1Wnq64+/UzFEgNVb+pHsKgnAj1hp6CC49iJD7eEjF8qNr/3U2I+XAM\njSgKKt8TBQKBgH0sCRBNuh0oKvW2TA3/YjK7r5rjGNgunSgs+u/5WbP+lAUyqe6N\npLOEUXu0sxe8fa2A56D6gvRr5v2Pfol8eDjYoAPVMMpXSdtydUIMDxpZpu/UQ9Zx\n52qo8ybhsPWD2Ld1ravz2cq7P82pmvSTmYcBkZiV13YllX4/G0CrbcwRAoGALMZr\ntVKMV2Y0F/moSfKpih8/YjFsmbzPCoYrmIg76x7PzTQ47705Qe4BOAn9nYgV745v\n4MOhVA9NI+a/AqKVT/MtvREKy6Xypop76+pQFlgTqYMkaUyYGdWze8VVq6CZjxZm\nqmDAknsznpbvl/EgeCRq6ifIgoq0fbxUpUImyAUCgYEAhy5HYGOn5ntfex2M3B0o\nCetEOc7zQKwaUIc0GlfaSMl6UkrDMY0ut8P/ZoMQKLvBacgvlZwl6ht+LzhOGhkN\nztcTJLDLgT5LhfG4i/gFvxcubUVTGSMCtOW7PMBZxo/C+NzgDwEQXM7D26ICnOWZ\n/oI8lkSXYEf5hUQlkKK4qw8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "clone-spotify-storage@my-project-1-224103.iam.gserviceaccount.com",
+  "client_id": "110720953368984908931",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/clone-spotify-storage%40my-project-1-224103.iam.gserviceaccount.com"
+}
