@@ -1,30 +1,39 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-
-var logger = require('morgan');
-const cors =require ('cors')
-
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://35.247.142.22/shopping-cart');
+const express = require('express')
+const app = express()
 require('dotenv').config()
-// mongoose.connect('mongodb://localhost/todo');
+const port = process.env.PORT || 3000
+const mongoose = require('mongoose')
+const mongodbUri = process.env.mongo
+const cors = require('cors')
 
+//routes
 var usersRouter = require('./routes/users');
 var adminRouter = require('./routes/admin.js')
 var itemRouter = require('./routes/item.js')
 var categoryRouter = require('./routes/category.js')
 var cartRouter = require('./routes/cart.js')
-const routes = require('./routes/index.js')
+var routes = require('./routes/index.js')
 
-var app = express();
-
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 app.use(cors())
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+//connect mongoose
+mongoose.connect(mongodbUri,
+  {
+    useNewUrlParser: true,
+    auth: {
+      user: process.env.mlab_user,
+      password: process.env.mlab_password
+    }
+  });
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log(('You are Mongected'));
+});
 
+//path
 app.use('/user', usersRouter);
 app.use('/admin', adminRouter);
 app.use('/item', itemRouter)
@@ -32,20 +41,8 @@ app.use('/category', categoryRouter)
 app.use('/cart',cartRouter)
 app.use('/', routes);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
-
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.status(400).json({error: err});
-});
+app.listen(port, () => {
+    console.log(`Listening to port ${port}`);
+})
 
 module.exports = app;
