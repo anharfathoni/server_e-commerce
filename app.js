@@ -6,7 +6,7 @@ var logger = require('morgan');
 const cors =require ('cors')
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/shopping-cart');
+mongoose.connect('mongodb://35.247.142.22/shopping-cart');
 require('dotenv').config()
 // mongoose.connect('mongodb://localhost/todo');
 
