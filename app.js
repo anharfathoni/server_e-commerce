@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-const port = process.env.PORT || 3100
+const port = process.env.PORT || 3000
 const mongoose = require('mongoose')
-const mongodbUri = process.env.mongo
+const mongodbUri = 'mongodb://anharaf:anhar1234@ds227674.mlab.com:27674/shopping-cart'
 const cors = require('cors')
 
 //routes

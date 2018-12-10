@@ -1,12 +1,23 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/shopping-cart');
+// mongoose.connect('mongodb://localhost/shopping-cart');
+const mongodbUri = 'mongodb://anharaf:anhar1234@ds227674.mlab.com:27674/shopping-cart'
+
+console.log(mongodbUri)
+mongoose.connect(mongodbUri,
+  {
+    useNewUrlParser: true,
+    auth: {
+      user: process.env.mlab_user,
+      password: process.env.mlab_password
+    }
+  });
 
 const User = require('./models/Users.js')
 
 let admin = {
   name: "Anhar",
   email: "anhar@mail.com",
-  password: "1234",
+  password: "123456",
   role: "admin"
 }
 console.log('coba create')
