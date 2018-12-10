@@ -15,8 +15,8 @@ mongoose.connect(mongodbUri,
 const User = require('./models/Users.js')
 
 let admin = {
-  name: "User1",
-  email: "user1@mail.com",
+  name: "User2",
+  email: "user2@mail.com",
   password: "123456",
   role: "admin"
 }
