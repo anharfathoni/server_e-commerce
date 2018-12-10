@@ -7,16 +7,16 @@ mongoose.connect(mongodbUri,
   {
     useNewUrlParser: true,
     auth: {
-      user: process.env.mlab_user,
-      password: process.env.mlab_password
+      user: 'anharaf',
+      password: 'anhar1234'
     }
   });
 
 const User = require('./models/Users.js')
 
 let admin = {
-  name: "Anhar",
-  email: "anhar@mail.com",
+  name: "User1",
+  email: "user1@mail.com",
   password: "123456",
   role: "admin"
 }

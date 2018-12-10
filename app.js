@@ -23,8 +23,8 @@ mongoose.connect(mongodbUri,
   {
     useNewUrlParser: true,
     auth: {
-      user: process.env.mlab_user,
-      password: process.env.mlab_password
+      user: 'anharaf',
+      password: 'anhar1234'
     }
   });
 const db = mongoose.connection;
