@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cors())
 
 //connect mongoose
-mongoose.connect(mongodbUri,
+mongoose.connect('mongodb://anharaf:anhar1234@ds227674.mlab.com:27674/shopping-cart',
   {
     useNewUrlParser: true,
     auth: {
